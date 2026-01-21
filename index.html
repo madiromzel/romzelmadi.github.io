@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romzel | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Madz<span class="dev">.dev</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#stack">Tech Stack</a></li>
+      <li><a href="#resume">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero / About Section -->
+  <section id="about" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-image">
+        <div class="photo-frame"></div>
+        <div class="photo-placeholder" aria-hidden="true"></div>
+        <img src="Image\Pfp.JPG" alt="Romzel">
+      </div>
+      <div class="hero-text">
+        <h1>
+          <span class="typewriter type-intro" data-text="Hey, I'm "></span>
+          <span class="highlight typewriter type-name" data-text="Romzel"></span>
+        </h1>
+        <p class="typewriter type-desc" data-text="I'm a Computer Engineering student and web developer passionate about building clean, modern, and efficient web solutions. I love working with HTML, CSS, JavaScript, PHP, SQL, and CMS platforms like WordPress and GHL."></p>
+        <a href="#projects" class="cta-btn delayed-cta">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="projects-stage">
+      <div class="projects-cover" role="button" tabindex="0" aria-label="Reveal projects">
+        <div class="cover-content">
+          <span class="cover-title">PROJECTS</span>
+          <span class="cover-sub">Click me</span>
+        </div>
+      </div>
+      <div class="projects-inner">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+          <div class="project-card placeholder">
+            <h3>Project 1</h3>
+            <p>Polishing this one right now. Launching soon.</p>
+            <span class="status-pill">In Progress</span>
+          </div>
+          <div class="project-card placeholder">
+            <h3>Project 2</h3>
+            <p>Building the core features and finishing the UI.</p>
+            <span class="status-pill">In Progress</span>
+          </div>
+          <div class="project-card placeholder">
+            <h3>Project 3</h3>
+            <p>Case study and final polish coming next.</p>
+            <span class="status-pill">In Progress</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="stack" class="stack">
+    <div class="stack-stage">
+      <div class="stack-cover" aria-hidden="true">
+        <div class="stack-cover-text">
+          <span class="cover-title">TECH STACK</span>
+        </div>
+        <button class="stack-reveal" type="button" aria-label="Reveal tech stack">→</button>
+      </div>
+      <div class="stack-inner">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="stack-carousel" aria-live="polite">
+          <button class="stack-nav stack-prev" type="button" aria-label="Previous tech"><</button>
+          <div class="stack-viewport">
+            <div class="stack-track">
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+            <p>HTML</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+            <p>CSS</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+            <p>JavaScript</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <p>React</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+            <p>PHP</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+            <p>SQL</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress">
+            <p>WordPress</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="GHL">
+            <p>GHL</p>
+          </div>
+            </div>
+          </div>
+          <button class="stack-nav stack-next" type="button" aria-label="Next tech">></button>
+        </div>
+      </div>
+      <button class="stack-hide" type="button" aria-label="Hide tech stack">←</button>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="resume">
+    <div class="resume-stage">
+      <div class="resume-cover">
+        <div class="resume-cover-text">Work with me!</div>
+        <button class="resume-reveal" type="button" aria-label="Reveal resume">CLICK HERE</button>
+      </div>
+      <div class="resume-inner">
+        <h2 class="section-title">Resume</h2>
+        <a href="resume.pdf" class="resume-btn">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Romzel Madi — All Rights Reserved</p>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
