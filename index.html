@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romzel | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Madz<span class="dev">.dev</span></div>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-bar"></span>
+      <span class="nav-bar"></span>
+      <span class="nav-bar"></span>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#stack">Tech Stack</a></li>
+      <li><a href="#resume">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero / About Section -->
+  <section id="about" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-image">
+        <div class="photo-frame"></div>
+        <div class="photo-placeholder" aria-hidden="true"></div>
+        <img src="Pfp.JPG" alt="Romzel">
+      </div>
+      <div class="hero-text">
+        <h1>
+          <span class="typewriter type-intro" data-text="Hey, I'm "></span>
+          <span class="highlight typewriter type-name" data-text="Romzel"></span>
+        </h1>
+        <p class="typewriter type-desc" data-text="I’m a graduate of Diploma in Computer Engineering Technology and Bachelor of Science in Computer Engineering, aspiring Software Engineer with hands-on experience in full-stack web development, system design, and problem-solving using PHP, SQL, JavaScript, and modern web tools."></p>
+        <a href="#projects" class="cta-btn delayed-cta">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="projects-stage">
+      <div class="projects-cover" role="button" tabindex="0" aria-label="Reveal projects">
+        <div class="cover-content">
+          <span class="cover-title">PROJECTS</span>
+          <span class="cover-sub">Click me</span>
+        </div>
+      </div>
+      <div class="projects-inner">
+        <h2 class="section-title">Top Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <h3>I-SKEDYULER</h3>
+              <p class="project-tag">Role-based academic scheduler with conflict detection, room optimization, and live workload views.</p>
+            </div>
+            <div class="project-band">
+              <svg class="project-scribble" viewBox="0 0 260 60" aria-hidden="true">
+                <path d="M6 40 Q40 10 70 36 T130 36 T190 36 T254 36" />
+              </svg>
+              <a class="project-link" href="i-skedyuler.html">Explore</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-top">
+              <h3>MAD WORKOUT</h3>
+              <p class="project-tag">Workout routine builder with daily logging and progress insights for consistent training.</p>
+            </div>
+            <div class="project-band">
+              <svg class="project-scribble" viewBox="0 0 260 60" aria-hidden="true">
+                <path d="M6 34 Q44 52 82 30 T150 30 T214 30 T254 30" />
+              </svg>
+              <a class="project-link" href="mad-workout-routine.html">Explore</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-top">
+              <h3>LEAKGUARD</h3>
+              <p class="project-tag">IoT water leak detection with real-time alerts, Firebase logging, and a Vue dashboard.</p>
+            </div>
+            <div class="project-band">
+              <svg class="project-scribble" viewBox="0 0 260 60" aria-hidden="true">
+                <path d="M6 38 Q34 20 64 36 T122 36 T182 36 T254 36" />
+              </svg>
+              <a class="project-link" href="leakguard.html">Explore</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="stack" class="stack">
+    <div class="stack-stage">
+      <div class="stack-cover" aria-hidden="true">
+        <div class="stack-cover-text">
+          <span class="cover-title">TECH STACK</span>
+        </div>
+        <button class="stack-reveal" type="button" aria-label="Reveal tech stack">→</button>
+      </div>
+      <div class="stack-inner">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="stack-carousel" aria-live="polite">
+          <button class="stack-nav stack-prev" type="button" aria-label="Previous tech"><</button>
+          <div class="stack-viewport">
+            <div class="stack-track">
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+            <p>HTML</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+            <p>CSS</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+            <p>JavaScript</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <p>React</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+            <p>PHP</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+            <p>SQL</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress">
+            <p>WordPress</p>
+          </div>
+          <div class="icon-box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="GHL">
+            <p>GHL</p>
+          </div>
+            </div>
+          </div>
+          <button class="stack-nav stack-next" type="button" aria-label="Next tech">></button>
+        </div>
+      </div>
+      <button class="stack-hide" type="button" aria-label="Hide tech stack">←</button>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="resume">
+    <div class="resume-stage">
+      <div class="resume-cover">
+        <div class="resume-cover-text">Work with me!</div>
+        <button class="resume-reveal" type="button" aria-label="Reveal resume">CLICK HERE</button>
+      </div>
+      <div class="resume-inner">
+        <h2 class="section-title">Contact</h2>
+        <div class="resume-split">
+          <div class="resume-primary">
+            <h3>Interested in working together?</h3>
+            <p>View my resume or reach out directly. I am open to opportunities and collaborations.</p>
+            <div class="resume-cta-row">
+              <a href="https://drive.google.com/file/d/1nk-5osxV0Nswn1WfI48pjdL5EA-5f181/view?usp=sharing" class="resume-btn resume-cta" target="_blank">View Resume</a>
+              <a href="https://www.linkedin.com/in/madi-romzel/" class="resume-btn resume-btn-outline resume-cta" target="_blank" rel="noopener">View LinkedIn</a>
+            </div>
+          </div>
+          <div class="resume-contact">
+            <h3>Reach out to me!</h3>
+            <ul class="contact-list">
+              <li>
+                <a href="mailto:romzel.madi.dev@gmail.com">
+                  <span class="contact-icon" aria-hidden="true">@</span>
+                  <span class="contact-text">romzel.madi.dev@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+639933384392">
+                  <span class="contact-icon" aria-hidden="true">tel</span>
+                  <span class="contact-text">+63 993 338 4392</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Romzel Madi — All Rights Reserved</p>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

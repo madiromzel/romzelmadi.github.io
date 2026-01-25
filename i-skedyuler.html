@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I-SKEDYULER | Project Overview</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="project-page">
+  <nav class="navbar">
+    <div class="logo"><a href="Portfolio.php" class="logo-link">Madz<span class="dev">.dev</span></a></div>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-bar"></span>
+      <span class="nav-bar"></span>
+      <span class="nav-bar"></span>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#features">Key Features</a></li>
+      <li><a href="#why">Why I Built It</a></li>
+      
+    </ul>
+  </nav>
+
+  <header id="overview" class="project-hero">
+    <div class="project-hero-inner">
+      <div class="project-hero-text">
+        <p class="project-kicker">Project Overview</p>
+        <h1 class="flip-title">I-SKEDYULER</h1>
+        <p class="project-subtitle typewriter" data-text="A role-based academic scheduling system designed to efficiently manage classes, rooms, and faculty workloads. It streamlines schedule creation, prevents conflicts automatically, and ensures data integrity through a relational database-driven architecture."></p>
+        <p class="project-tech typewriter" data-text="Languages Used: HTML, CSS, JavaScript, Vanilla PHP, SQL"></p>
+        <div class="project-cta">
+          <a class="cta-btn" href="https://drive.google.com/file/d/1K1JA5I3wtcPL7lixHF3ZQvO4OpRPAUr0/view?usp=sharing" target="_blank">View Demo</a>
+          <a class="ghost-btn" href="Portfolio.php#projects">Back to Portfolio</a>
+        </div>
+      </div>
+      <div class="project-gallery">
+        <div class="overview-media">
+          <video class="overview-video" controls autoplay muted loop playsinline preload="metadata" poster="Images/Video-Cover.png">
+            <source src="Images/I-SKEDYULER.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="project-section">
+    <div class="project-section-inner">
+      <h2>Key Features</h2>
+      <div class="feature-carousel" aria-label="Key features">
+        <button class="feature-nav feature-prev" type="button" aria-label="Previous feature"><</button>
+        <div class="feature-viewport">
+          <div class="feature-track">
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>Intelligent Schedule Management</h3>
+                  <ul>
+                    <li>Create academic schedules with a streamlined two-click interaction, eliminating manual time and day inputs.</li>
+                    <li>Supports scheduling across three academic terms: 1st Semester, 2nd Semester, and Summer Semester.</li>
+                    <li>Centralized viewing of schedules by section, professor, room, and professor working hours.</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/Feature1.png">
+                  <img class="feature-thumb" src="Images/Feature1.png" alt="Schedule creation interface">
+                </div>
+              </div>
+            </article>
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>Conflict Detection and Validation</h3>
+                  <ul>
+                    <li>Built-in schedule conflict checker prevents overlapping professor assignments.</li>
+                    <li>Stops double-booked rooms before saving changes.</li>
+                    <li>Blocks assignments outside a professor's working hours.</li>
+                    <li>Ensures data integrity and avoids human scheduling errors.</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/Feature2.png">
+                  <img class="feature-thumb" src="Images/Feature2.png" alt="Conflict warning and validation view">
+                </div>
+              </div>
+            </article>
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>Role-Based Access Control</h3>
+                  <ul>
+                    <li>Admin: full system access and control.</li>
+                    <li>Department Head: limited to assigned departments and authorized schedule creation.</li>
+                    <li>Viewer: read-only access for reference and verification.</li>
+                    <li>Improves security while keeping workflow accountability.</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/Feature3.png">
+                  <img class="feature-thumb" src="Images/Feature3.png" alt="User roles and access settings">
+                </div>
+              </div>
+            </article>
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>Robust Data Management</h3>
+                  <ul>
+                    <li>Full CRUD functionality across all scheduling entities.</li>
+                    <li>Normalized relational database schema for clean updates.</li>
+                    <li>Safe deletion without orphaned records.</li>
+                    <li>Consistent data sync across related tables.</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/Feature4.png">
+                  <img class="feature-thumb" src="Images/Feature4.png" alt="Database management and records list">
+                </div>
+              </div>
+            </article>
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>Reporting and Output</h3>
+                  <ul>
+                    <li>Generate print-ready and downloadable schedules.</li>
+                    <li>Optimized layouts for readability and official reporting.</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/Feature5.png">
+                  <img class="feature-thumb" src="Images/Feature5.png" alt="Printable schedule report preview">
+                </div>
+              </div>
+            </article>
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>System Design Highlights</h3>
+                  <ul>
+                    <li>Modular PHP architecture for maintainability and scalability.</li>
+                    <li>SQL-based relational database enforcing data consistency.</li>
+                    <li>UI-driven workflow reduces administrative effort and user error.</li>
+                    <li>Languages used: HTML, CSS, Javascript, PHP, and SQL</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/Feature6.png">
+                  <img class="feature-thumb" src="Images/Feature6.png" alt="System modules and workflow overview">
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="feature-nav feature-next" type="button" aria-label="Next feature">></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="project-section">
+    <div class="project-section-inner">
+      <h2>Why I Built It</h2>
+      <p>
+        Our department still builds schedules manually in Excel, which wastes time and makes it easy to miss conflicts.
+        There is no built-in check for overlapping classes, no quick way to view room, section, or professor schedules,
+        and no visibility into professor working hours. With limited rooms and a growing student population, we needed a
+        system that maximizes room usage and makes scheduling faster, clearer, and more accurate.
+      </p>
+      <br>
+      <p>
+        With I-SKEDYULER, these challenges are addressed through an automated, system-driven approach to schedule management. The platform centralizes scheduling data, enforces real-time conflict validation, and provides clear visibility into room usage, faculty workloads, and working hours. By replacing manual spreadsheets with a structured scheduling system, I-SKEDYULER improves accuracy, reduces administrative effort, and enables faster, more reliable academic planning.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Romzel Madi — All Rights Reserved</p>
+  </footer>
+
+  <div class="feature-lightbox" aria-hidden="true">
+    <div class="feature-lightbox-backdrop"></div>
+    <img class="feature-lightbox-image" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

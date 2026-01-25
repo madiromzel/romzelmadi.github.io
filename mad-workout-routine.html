@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAD Workout Routine | Project Overview</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="project-page">
+  <nav class="navbar">
+    <div class="logo"><a href="Portfolio.php" class="logo-link">Madz<span class="dev">.dev</span></a></div>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-bar"></span>
+      <span class="nav-bar"></span>
+      <span class="nav-bar"></span>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#features">Key Features</a></li>
+      <li><a href="#why">Why I Built It</a></li>
+    </ul>
+  </nav>
+
+  <header id="overview" class="project-hero">
+    <div class="project-hero-inner">
+      <div class="project-hero-text">
+        <p class="project-kicker">Project Overview</p>
+        <h1 class="flip-title">MAD Workout Routine</h1>
+        <p class="project-subtitle typewriter" data-text="A workout planning and tracking app focused on simple routines, clean progress views, and fast daily logging."></p>
+        <p class="project-tech typewriter" data-text="Languages Used: HTML, CSS, JavaScript (React)"></p>
+        <div class="project-cta">
+          <a class="cta-btn" href="https://workout-builder-sable.vercel.app/" target="_blank">View Site</a>
+          <a class="ghost-btn" href="Portfolio.php#projects">Back to Portfolio</a>
+        </div>
+      </div>
+      <div class="project-gallery">
+        <div class="overview-media">
+          <video class="overview-video" controls autoplay muted loop playsinline preload="metadata" poster="Images/MADFeature1.png">
+            <source src="Images/MAD-Workout.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="project-section">
+    <div class="project-section-inner">
+      <h2>Key Features</h2>
+      <div class="feature-carousel" aria-label="Key features">
+        <button class="feature-nav feature-prev" type="button" aria-label="Previous feature"><</button>
+        <div class="feature-viewport">
+          <div class="feature-track">
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>React State, motion and UI Polish</h3>
+                  <ul>
+                    <li>Drag‑and‑drop routine builder with modular workout blocks</li>
+                    <li>Interval timer with work/rest phases and start/end beeps</li>
+                    <li>Preset saving + localStorage persistence for fast reuse</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/MADFeature1.png">
+                  <img class="feature-thumb" src="Images/MADFeature1.png" alt="MAD Workout">
+                </div>
+              </div>
+            </article>
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>React State, motion and UI Polish</h3>
+                  <ul>
+                    <li>Responsive, manly UI with custom typography and motion</li>
+                    <li>Clean React architecture with reusable components and hooks</li>
+                    <li>No backend needed</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/MADFeature2.png">
+                  <img class="feature-thumb" src="Images/MADFeature2.png" alt="MAD Workout">
+                </div>
+              </div>
+            </article>
+           
+          </div>
+        </div>
+        <button class="feature-nav feature-next" type="button" aria-label="Next feature">></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="project-section">
+    <div class="project-section-inner">
+      <h2>Why I Built It</h2>
+      <p>
+        I love working out, so I built a tool I’d actually use. Fast to set up routines, easy to tweak, and focused on execution. It also let me show off my React skills with state management, drag‑and‑drop, and a real‑time interval timer, all wrapped in a bold UI that matches the training mindset.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Romzel Madi — All Rights Reserved</p>
+  </footer>
+
+  <div class="feature-lightbox" aria-hidden="true">
+    <div class="feature-lightbox-backdrop"></div>
+    <img class="feature-lightbox-image" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

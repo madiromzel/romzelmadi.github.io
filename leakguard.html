@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeakGuard | Project Overview</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="project-page">
+  <nav class="navbar">
+    <div class="logo"><a href="Portfolio.php" class="logo-link">Madz<span class="dev">.dev</span></a></div>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-bar"></span>
+      <span class="nav-bar"></span>
+      <span class="nav-bar"></span>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#features">Key Features</a></li>
+      <li><a href="#why">Why I Built It</a></li>
+    </ul>
+  </nav>
+
+  <header id="overview" class="project-hero">
+    <div class="project-hero-inner">
+      <div class="project-hero-text">
+        <p class="project-kicker">Project Overview</p>
+        <h1 class="flip-title">LeakGuard</h1>
+        <p class="project-subtitle typewriter" data-text="An IoT-based smart home system for real-time water leak detection and alerting. It uses moisture sensors with a NodeMCU, MQTT for live updates, Firebase for logging and notifications, and a Vue dashboard for clear monitoring."></p>
+        <p class="project-tech typewriter" data-text="Stack: HTML, CSS, C++, JavaScript, Vue, Node.js, MQTT, Firebase"></p>
+        <div class="project-cta">
+          <a class="cta-btn" href="https://drive.google.com/file/d/1sLBGGL8Ek3IXmN38-mkhpSNEmkO0fnya/view?usp=sharing" target="_blank" rel="noopener">View Demo</a>
+          <a class="ghost-btn" href="Portfolio.php#projects">Back to Portfolio</a>
+        </div>
+      </div>
+      <div class="project-gallery">
+        <div class="overview-media">
+          <video class="overview-video" controls autoplay muted loop playsinline preload="metadata" poster="Images/leakguard-preview.jpg">
+            <source src="Images/Leakguard.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="project-section">
+    <div class="project-section-inner">
+      <h2>Key Features</h2>
+      <div class="feature-carousel" aria-label="Key features">
+        <button class="feature-nav feature-prev" type="button" aria-label="Previous feature"><</button>
+        <div class="feature-viewport">
+          <div class="feature-track">
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>Real-Time Leak Alerts</h3>
+                  <ul>
+                    <li>Live MQTT updates with clear leak status.</li>
+                    <li>Instant visual indicators for critical events.</li>
+                    <li>Low-latency telemetry for quick response.</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/LGFeature1.png">
+                  <img class="feature-thumb" src="Images/LGFeature1.png" alt="Real-time alerts dashboard">
+                </div>
+              </div>
+            </article>
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>Historical Analytics (Firebase)</h3>
+                  <ul>
+                    <li>Firestore logging for audit trails.</li>
+                    <li>Trend charts for sensor values and leak events.</li>
+                    <li>Timestamped records for reporting.</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/LGFeature2.png">
+                  <img class="feature-thumb" src="Images/LGFeature2.png" alt="Monitoring overview screen">
+                </div>
+              </div>
+            </article>
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>Device Control &amp; Safety</h3>
+                  <ul>
+                    <li>Remote threshold tuning from the dashboard.</li>
+                    <li>MQTT commands for buzzer and test mode.</li>
+                    <li>On-device safety fallback when offline.</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/LGFeature3.png">
+                  <img class="feature-thumb" src="Images/LGFeature3.png" alt="Incident response workflow">
+                </div>
+              </div>
+            </article>
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>Unified Dashboard</h3>
+                  <ul>
+                    <li>Real-time + historical data in one view.</li>
+                    <li>Streamlined cards for current status.</li>
+                    <li>Fast filtering and readable charts.</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/LGFeature1.png">
+                  <img class="feature-thumb" src="Images/LGFeature1.png" alt="Unified dashboard view">
+                </div>
+              </div>
+            </article>
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>Reliable Connectivity</h3>
+                  <ul>
+                    <li>Auto-reconnect for MQTT sessions.</li>
+                    <li>Secure TLS connection to broker.</li>
+                    <li>Resilient to Wi-Fi dropouts.</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/LGFeature4.png">
+                  <img class="feature-thumb" src="Images/LGFeature4.png" alt="Connectivity status view">
+                </div>
+              </div>
+            </article>
+            <article class="feature-slide">
+              <div class="feature-split">
+                <div class="feature-copy">
+                  <h3>IoT End-to-End Flow</h3>
+                  <ul>
+                    <li>ESP8266 to MQTT for live data.</li>
+                    <li>HTTP to Node.js to Firestore for persistence.</li>
+                    <li>Vue + Pinia for reactive UI state.</li>
+                  </ul>
+                </div>
+                <div class="feature-media" data-pop="Images/LGFeature5.png">
+                  <img class="feature-thumb" src="Images/LGFeature5.png" alt="System architecture flow">
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="feature-nav feature-next" type="button" aria-label="Next feature">></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="project-section">
+    <div class="project-section-inner">
+      <h2>Why I Built It</h2>
+      <p>
+        LeakGuard was built as a final project requirement for the Embedded Systems subject. Water leaks are often
+        unnoticed until they cause damage and high repair costs, especially in areas that are rarely checked. The
+        system uses a NodeMCU (ESP8266), water leak/moisture sensors (YL-69 or similar), a buzzer for local alerts,
+        a power supply, jumper wires, a breadboard, and a power adapter to deliver real-time detection and instant alerts.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Romzel Madi — All Rights Reserved</p>
+  </footer>
+
+  <div class="feature-lightbox" aria-hidden="true">
+    <div class="feature-lightbox-backdrop"></div>
+    <img class="feature-lightbox-image" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
